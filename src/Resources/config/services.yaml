@@ -1,0 +1,18 @@
+services:
+  rikudou.clock.clock:
+    class: Rikudou\Clock\Clock
+
+  rikudou.clock.immutable:
+    class: Rikudou\Clock\ImmutableClock
+
+  rikudou.clock.fixed_timezone:
+    class: Rikudou\Clock\FixedTimezoneClock
+    arguments:
+      - '%rikudou.clock.timezone%'
+
+  rikudou.clock.fixed_timezone_immutable:
+    class: Rikudou\Clock\FixedTimezoneImmutableClock
+    arguments:
+      - '%rikudou.clock.timezone%'
+
+  rikudou.clock.default: # defined in extension

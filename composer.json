@@ -1,0 +1,32 @@
+{
+    "name": "rikudou/clock-bundle",
+    "description": "Simple Symfony bundle for clock abstraction",
+    "type": "symfony-bundle",
+    "require": {
+        "rikudou/clock": "^1.0",
+        "symfony/http-kernel": "^4.3 | ^5.0",
+        "symfony/dependency-injection": "^4.3 | ^5.0",
+        "symfony/config": "^4.3 | ^5.0",
+        "symfony/yaml": "^4.3 | ^5.0",
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Chrastecky",
+            "email": "dominik@chrastecky.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Rikudou\\ClockBundle\\": "src/"
+        }
+    },
+    "scripts": {
+        "fixer": "php-cs-fixer fix src --verbose"
+    }
+}
