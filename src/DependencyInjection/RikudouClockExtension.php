@@ -14,6 +14,7 @@ final class RikudouClockExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
         $loader->load('autowiring.yaml');
+        $loader->load('dynamic_services.yaml');
 
         $configs = $this->processConfiguration(new Configuration(), $configs);
         $container->setAlias('rikudou.clock.default', $configs['default_clock']);

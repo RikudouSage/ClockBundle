@@ -1,0 +1,2 @@
+services:
+  rikudou.clock.default: # defined in extension
