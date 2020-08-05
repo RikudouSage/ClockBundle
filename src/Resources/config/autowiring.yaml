@@ -1,0 +1,2 @@
+services:
+  Rikudou\Clock\ClockInterface: '@rikudou.clock.default'
