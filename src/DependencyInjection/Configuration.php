@@ -27,5 +27,7 @@ final class Configuration implements ConfigurationInterface
                     ->defaultValue('UTC')
                 ->end()
             ->end();
+
+        return $rootNode;
     }
 }
